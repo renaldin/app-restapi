@@ -1,0 +1,24 @@
+{
+  "name": "app-restapi",
+  "version": "1.0.0",
+  "description": "Aplikasi Rest Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renaldin/app-restapi.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "renaldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renaldin/app-restapi/issues"
+  },
+  "homepage": "https://github.com/renaldin/app-restapi#readme"
+}
