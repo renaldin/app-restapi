@@ -3,6 +3,6 @@
 module.exports = function(app){
     let jsonku = require('./controller');
 
-    app.router('/')
+    app.route('/')
         .get(jsonku.index);
-}
+};
