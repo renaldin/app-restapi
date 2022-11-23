@@ -41,7 +41,7 @@ exports.addStudentData = function (req, res) {
         if (error) {
             console.log(error);
         } else {
-            response.ok('Berhasil Menambahkan Data!', res);
+            response.ok('Add Data Successfully', res);
         }
     });
 };
@@ -59,5 +59,17 @@ exports.updateStudentData = function (req, res) {
         } else {
             response.ok("Update Data Succesfully", res);
         }
-    })
-}
+    });
+};
+
+// delete stuednt data 
+exports.deleteStudent = function (req, res) {
+    let id = req.body.id_mahasiswa;
+    connection.query('DELETE FROM mahasiswa WHERE id_mahasiswa=?', [id], function (error, rows, fiels) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Delete Data Succesfully", res);
+        }
+    });
+};

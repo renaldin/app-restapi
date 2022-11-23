@@ -17,4 +17,7 @@ module.exports = function (app) {
 
     app.route('/update')
         .put(jsonku.updateStudentData);
+
+    app.route('/delete')
+        .delete(jsonku.deleteStudent);
 };
