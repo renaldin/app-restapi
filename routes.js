@@ -11,6 +11,10 @@ module.exports = function (app) {
 
     app.route('/show/:id')
         .get(jsonku.showAllStudentById);
+
     app.route('/add')
         .post(jsonku.addStudentData);
+
+    app.route('/update')
+        .put(jsonku.updateStudentData);
 };
