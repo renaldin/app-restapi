@@ -30,3 +30,18 @@ exports.showAllStudentById = function (req, res) {
         }
     });
 };
+
+// add student data 
+exports.addStudentData = function (req, res) {
+    let nim = req.body.nim;
+    let nama = req.body.nama;
+    let jurusan = req.body.jurusan;
+
+    connection.query('INSERT INTO mahasiswa (nim, nama, jurusan) Values (?,?,?)', [nim, nama, jurusan], function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok('Berhasil Menambahkan Data!', res);
+        }
+    });
+};
