@@ -20,4 +20,7 @@ module.exports = function (app) {
 
     app.route('/delete')
         .delete(jsonku.deleteStudent);
+
+    app.route('/showKrs')
+        .get(jsonku.showGroupMatakuliah);
 };
