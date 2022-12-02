@@ -1,34 +1,33 @@
 {
-  "name": "app-restapi",
+  "name": "apprestapi",
   "version": "1.0.0",
-  "description": "Aplikasi Rest Api",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renaldin/app-restapi.git"
+    "url": "git+https://github.com/banyucenter/apprestapi.git"
   },
-  "keywords": [
-    "rest",
-    "api",
-    "nodejs"
-  ],
-  "author": "renaldi",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renaldin/app-restapi/issues"
+    "url": "https://github.com/banyucenter/apprestapi/issues"
   },
-  "homepage": "https://github.com/renaldin/app-restapi#readme",
+  "homepage": "https://github.com/banyucenter/apprestapi#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
-    "express": "^4.18.2",
-    "ip": "^1.1.8",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.9",
+    "ip": "^1.1.5",
+    "json-groupby": "^1.1.0",
     "jsonwebtoken": "^8.5.1",
-    "md5": "^2.3.0",
+    "md5": "^2.2.1",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.20"
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4"
   }
 }

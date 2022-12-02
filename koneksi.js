@@ -1,16 +1,17 @@
-let mysql = require('mysql');
+var mysql = require('mysql');
 
-// koneksi database 
+//buat koneksi database
 const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'db-restapi'
+    database: 'restapidb',
+    port: '3306'
 });
 
 conn.connect((err) => {
     if (err) throw err;
-    console.log('Mysql terkeneksi');
+    console.log('Mysql terkoneksi');
 });
 
 module.exports = conn;

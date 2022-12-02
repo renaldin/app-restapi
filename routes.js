@@ -1,26 +1,25 @@
 'use strict';
 
 module.exports = function (app) {
-    let jsonku = require('./controller');
+    var jsonku = require('./controller');
 
     app.route('/')
         .get(jsonku.index);
 
-    app.route('/show')
-        .get(jsonku.showAllStudent);
+    app.route('/tampil')
+        .get(jsonku.tampilsemuamahasiswa);
 
-    app.route('/show/:id')
-        .get(jsonku.showAllStudentById);
+    app.route('/tampil/:id')
+        .get(jsonku.tampilberdasarkanid);
+    app.route('/tambah')
+        .post(jsonku.tambahMahasiswa);
 
-    app.route('/add')
-        .post(jsonku.addStudentData);
+    app.route('/ubah')
+        .put(jsonku.ubahMahasiswa);
 
-    app.route('/update')
-        .put(jsonku.updateStudentData);
+    app.route('/hapus')
+        .delete(jsonku.hapusMahasiswa);
 
-    app.route('/delete')
-        .delete(jsonku.deleteStudent);
-
-    app.route('/showKrs')
-        .get(jsonku.showGroupMatakuliah);
-};
+    app.route('/tampilmatakuliah')
+        .get(jsonku.tampilgroupmatakuliah);
+}
